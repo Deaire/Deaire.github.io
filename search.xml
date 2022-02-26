@@ -1,34 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
-<search>
-  <entry>
-    <title>个人博客搭建踩坑</title>
-    <url>/2022/02/26/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E8%B8%A9%E5%9D%91/</url>
-    <content><![CDATA[<h1 id="个人网站搭建"><a href="#个人网站搭建" class="headerlink" title="个人网站搭建"></a>个人网站搭建</h1><h3 id="安装需要的前提工具"><a href="#安装需要的前提工具" class="headerlink" title="安装需要的前提工具"></a>安装需要的前提工具</h3><ul>
-<li>node.js<br><a href="https://www.cnblogs.com/liuqiyun/p/8133904.html">安装教程</a></li>
-<li>gitCMD<br><a href="https://www.cnblogs.com/xueweisuoyong/p/11914045.html">安装教程</a></li>
-</ul>
-<h3 id="注册github账号以及创建github仓库"><a href="#注册github账号以及创建github仓库" class="headerlink" title="注册github账号以及创建github仓库"></a>注册github账号以及创建github仓库</h3><ul>
-<li>注册github账号<br><a href="https://www.bilibili.com/read/cv5107169?from=search&amp;spm_id_from=333.337.0.0">注册教程</a></li>
-<li>新建仓库时仓库名格式为“githubid”+github.io</li>
-<li>生成ssh密钥<br>ssh-keygen -t rsa -C “邮件地址” 生成后选择id_rsa.pub文件进行复制<br>打开github寻找到settings 进行ssh设置</li>
-</ul>
-<h3 id="搭建hexo环境"><a href="#搭建hexo环境" class="headerlink" title="搭建hexo环境"></a>搭建hexo环境</h3><ul>
-<li>新建文件夹为blog 右键选择gitbash here</li>
-<li>运行npm install -g hexo //安装hexo </li>
-<li>hexo init  //初始化hexo</li>
-<li>hexo s //静态生成本地hexo页面<br>将<a href="http://localhoust:4000复制到本地浏览器即可看到本地hexo页面">http://localhoust:4000复制到本地浏览器即可看到本地hexo页面</a></li>
-</ul>
-<h3 id="将本地文件上传到GitHub仓库"><a href="#将本地文件上传到GitHub仓库" class="headerlink" title="将本地文件上传到GitHub仓库"></a>将本地文件上传到GitHub仓库</h3><ul>
-<li>打开config.yml文件修改deploy内容<br>deploy:<br>type:  git<br>repository: 个人仓库地址<br>branch: main</li>
-<li>在博客文件下右键选择gitbash here<br>运行npm install hexo-deployer-git –save<br>hexo g //生成页面<br>hexo d //上传至仓库 此时要输出github的账号与密码  </li>
-<li>上传之后 个人博客的网址为仓库名</li>
-</ul>
-<h4 id="运行npm可能出现的错误解决方案"><a href="#运行npm可能出现的错误解决方案" class="headerlink" title="运行npm可能出现的错误解决方案"></a>运行npm可能出现的错误解决方案</h4><ul>
-<li>打开电脑高级设置 选择环境变量 看到变量path选择编辑并且新建<br>新建地位为nodejs\node_global\node_modules\hexo-cli\bin</li>
-</ul>
-]]></content>
-      <tags>
-        <tag>web</tag>
-      </tags>
-  </entry>
+<search> 
+  
+  
+    
+    <entry>
+      <title>个人博客搭建踩坑</title>
+      <link href="/2022/02/26/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E8%B8%A9%E5%9D%91/"/>
+      <url>/2022/02/26/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E8%B8%A9%E5%9D%91/</url>
+      
+        <content type="html"><![CDATA[<h1 id="个人网站搭建"><a href="#个人网站搭建" class="headerlink" title="个人网站搭建"></a>个人网站搭建</h1><h3 id="安装需要的前提工具"><a href="#安装需要的前提工具" class="headerlink" title="安装需要的前提工具"></a>安装需要的前提工具</h3><ul><li>node.js<br><a href="https://www.cnblogs.com/liuqiyun/p/8133904.html">安装教程</a></li><li>gitCMD<br><a href="https://www.cnblogs.com/xueweisuoyong/p/11914045.html">安装教程</a></li></ul><h3 id="注册github账号以及创建github仓库"><a href="#注册github账号以及创建github仓库" class="headerlink" title="注册github账号以及创建github仓库"></a>注册github账号以及创建github仓库</h3><ul><li>注册github账号<br><a href="https://www.bilibili.com/read/cv5107169?from=search&amp;spm_id_from=333.337.0.0">注册教程</a></li><li>新建仓库时仓库名格式为“githubid”+github.io</li><li>生成ssh密钥<br>ssh-keygen -t rsa -C “邮件地址” 生成后选择id_rsa.pub文件进行复制<br>打开github寻找到settings 进行ssh设置</li></ul><h3 id="搭建hexo环境"><a href="#搭建hexo环境" class="headerlink" title="搭建hexo环境"></a>搭建hexo环境</h3><ul><li>新建文件夹为blog 右键选择gitbash here</li><li>运行npm install -g hexo //安装hexo </li><li>hexo init  //初始化hexo</li><li>hexo s //静态生成本地hexo页面<br>将<a href="http://localhoust:4000复制到本地浏览器即可看到本地hexo页面">http://localhoust:4000复制到本地浏览器即可看到本地hexo页面</a></li></ul><h3 id="将本地文件上传到GitHub仓库"><a href="#将本地文件上传到GitHub仓库" class="headerlink" title="将本地文件上传到GitHub仓库"></a>将本地文件上传到GitHub仓库</h3><ul><li>打开config.yml文件修改deploy内容<br>deploy:<br>type:  git<br>repository: 个人仓库地址<br>branch: main</li><li>在博客文件下右键选择gitbash here<br>运行npm install hexo-deployer-git –save<br>hexo g //生成页面<br>hexo d //上传至仓库 此时要输出github的账号与密码  </li><li>上传之后 个人博客的网址为仓库名</li></ul><h4 id="运行npm可能出现的错误解决方案"><a href="#运行npm可能出现的错误解决方案" class="headerlink" title="运行npm可能出现的错误解决方案"></a>运行npm可能出现的错误解决方案</h4><ul><li>打开电脑高级设置 选择环境变量 看到变量path选择编辑并且新建<br>新建地位为nodejs\node_global\node_modules\hexo-cli\bin</li></ul>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> web </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+  
+  
 </search>
